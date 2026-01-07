@@ -1,5 +1,5 @@
 # JavaScript Mini Projects 🧩
-This repository contains a collection of simple JavaScript mini projects
+This repository contains a collection of simple JavaScript mini projects (focused on calculator)
 created to practice JavaScript fundamentals, DOM manipulation,
 and front-end logic flow.
 
