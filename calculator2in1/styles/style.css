@@ -1,0 +1,75 @@
+html{
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(149, 146, 146);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+    .title h2{
+        font-size: 3rem;
+        font-weight: bolder;
+        color: azure;
+        -webkit-text-stroke-width: 0.8px;
+        -webkit-text-stroke-color: black;
+    }
+
+    #landing-container{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 30rem;
+        margin: 1rem;
+        padding: 2rem;
+        border-radius: 1rem;
+
+        background-color: azure;
+    }
+    #landing-container h3{
+        display: flex;
+        justify-content: center;
+        font-size: 1.7rem;
+    }
+    #tempButton{
+        cursor: pointer;
+        width: 25rem;
+        align-self: center;
+        color: azure;
+        font-weight: bold;
+        background-color: rgb(9, 119, 197);
+        border-radius: 1rem;
+        border-style: none;
+        padding: 1rem;
+        transition: 0.2s ease;
+        /* background-image: linear-gradient(to right, rgb(9, 119, 197), rgb(162, 198, 224)); */  
+    }
+    #tempButton:hover{
+        background-image: linear-gradient(to right, rgb(9, 119, 197), rgb(91, 149, 190));
+        transform: scale(1.05);
+    }
+    #basicButton{
+        cursor: pointer;
+        width: 25rem;
+        align-self: center;
+        font-weight: bold;
+        border-radius: 1rem;
+        border-style: none;
+        padding: 1rem;
+        background-color: rgb(8, 116, 8);
+        color: azure;
+        transition: 0.2s ease;
+    }
+    #basicButton:hover{
+        background-image: linear-gradient(to right, rgb(8, 116, 8), rgb(60, 202, 60));
+        transform: scale(1.05);
+    }
+    #landing-container p{
+        font-size: 1.2rem;
+        font-style: italic;
+        align-self: center;
+    }
