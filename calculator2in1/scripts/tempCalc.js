@@ -11,18 +11,18 @@ function selectTempOption(){
     secondTempOption = selectRightElement.value;
 }
 
-function checkOption() {
+function checkOption(){
     let selectLeftElement = document.getElementById("left");
     firstTempOption = selectLeftElement.value;
     let selectRightElement = document.getElementById("right");
     secondTempOption = selectRightElement.value;
-    if (firstTempOption === "celciusLeft" && secondTempOption === "celciusRight") {
+    if (firstTempOption === "C" && secondTempOption === "C") {
         return "°C";
-    }else if(firstTempOption === "fahrenheitLeft" && secondTempOption === "fahrenheitRight"){
+    }else if(firstTempOption === "F" && secondTempOption === "F"){
         return "°F";
-    }else if(firstTempOption === "kelvinLeft" && secondTempOption === "kelvinRight"){
+    }else if(firstTempOption === "K" && secondTempOption === "K"){
         return "°K";
-    }else if(firstTempOption === "reamurLeft" && secondTempOption === "reamurRight"){
+    }else if(firstTempOption === "R" && secondTempOption === "R"){
         return "°R";
     }
 }
@@ -100,35 +100,35 @@ document.getElementById("calculate").addEventListener("click", () =>{
         alert("Input yang dimasukkan tidak valid!");
     }
 
-    if(firstTempOption == secondTempOption){
-        console.log("HEYY");
-        resultValue = inputValue;
-    }else if(firstTempOption === "celciusLeft" && secondTempOption === "fahrenheitRight"){
+    if(firstTempOption === secondTempOption){
+        degree = checkOption();
+        resultValue = `${inputValue}${degree}`;
+    }else if(firstTempOption === "C" && secondTempOption === "F"){
         resultValue = celciusToFarenheit(inputValue);
-    }else if(firstTempOption === "celciusLeft" && secondTempOption === "kelvinRight"){
+    }else if(firstTempOption === "C" && secondTempOption === "K"){
         resultValue = celciusToKelvin(inputValue);
-    }else if(firstTempOption === "celciusLeft" && secondTempOption === "reamurRight"){
+    }else if(firstTempOption === "C" && secondTempOption === "R"){
         resultValue = celciusToReamur(inputValue);
 
-    }else if(firstTempOption === "fahrenheitLeft" && secondTempOption === "celciusRight"){
+    }else if(firstTempOption === "F" && secondTempOption === "C"){
         resultValue = farenheitToCelcius(inputValue);
-    }else if(firstTempOption === "fahrenheitLeft" && secondTempOption === "kelvinRight"){
+    }else if(firstTempOption === "F" && secondTempOption === "K"){
         resultValue = farenheitToKelvin(inputValue);
-    }else if(firstTempOption === "fahrenheitLeft" && secondTempOption === "reamurRight"){
+    }else if(firstTempOption === "F" && secondTempOption === "R"){
         resultValue = farenheitToReamur(inputValue);
 
-    }else if(firstTempOption === "kelvinLeft" && secondTempOption === "celciusRight"){
+    }else if(firstTempOption === "K" && secondTempOption === "C"){
         resultValue = kelvinToCelcius(inputValue);
-    }else if(firstTempOption === "kelvinLeft" && secondTempOption === "fahrenheitRight"){
+    }else if(firstTempOption === "K" && secondTempOption === "F"){
         resultValue = kelvinToFarenheit(inputValue);
-    }else if(firstTempOption === "kelvinLeft" && secondTempOption === "reamurRight"){
+    }else if(firstTempOption === "K" && secondTempOption === "R"){
         resultValue = kelvinToReamur(inputValue);
 
-    }else if(firstTempOption === "reamurLeft" && secondTempOption === "celciusRight"){
+    }else if(firstTempOption === "R" && secondTempOption === "C"){
         resultValue = reamurToCelcius(inputValue);
-    }else if(firstTempOption === "reamurLeft" && secondTempOption === "fahrenheitRight"){
+    }else if(firstTempOption === "R" && secondTempOption === "F"){
         resultValue = reamurToFarenheit(inputValue);
-    }else if(firstTempOption === "reamurLeft" && secondTempOption === "kelvinRight"){
+    }else if(firstTempOption === "R" && secondTempOption === "K"){
         resultValue = reamurToKelvin(inputValue);
     }
 
