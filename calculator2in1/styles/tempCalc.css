@@ -1,0 +1,119 @@
+html{
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right,  rgb(9, 119, 197), rgb(91, 149, 190));
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+    .title{
+        font-size: 1.5rem;
+        color: beige;
+        background-color: darkslategray;
+        padding: 0.8rem;
+        align-items: center;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    #container-temp{
+        display: flex;
+        flex-direction: column;
+        background-color: gainsboro;
+        padding: 2rem;
+        border-radius: 1rem;
+        width: 40rem;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+    #container-temp h3{
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        font-size: 2rem;
+    }
+    #container-temp #result{
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: darkslategray;
+    }
+
+    #container-temp .tempLeft{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2px;
+        margin-bottom: 10px;
+    }
+        .tempLeft .titleLeft{
+            font-size: 1.4rem;
+            font-style: italic;
+        }
+        .tempLeft #left{
+            cursor: pointer;
+            width: 30rem;
+            height: 3rem;
+        }
+        .tempLeft #valueTemp{
+            width: 20rem;
+            height: 3rem;
+        }
+
+    #container-temp .tempRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    margin-bottom: 10px;
+    }
+        .tempRight .titleRight{
+            font-size: 1.4rem;
+            font-style: italic;
+        }
+        .tempRight #right{
+            cursor: pointer;
+            width: 30rem;
+            height: 3rem;
+        }
+        #calculate{
+            cursor: pointer;
+            width: 10rem;
+            height: 3rem;
+            align-self: center;
+            margin-top: 1rem;
+            background-color: darkslategrey;
+            color: beige;
+            border-style: none;
+            border-radius: 8px;
+            transition: 0.2s ease;
+        }
+        #calculate:hover{
+            transform: scale(1.05);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+            background-color: rgb(61, 162, 162);
+        }
+        #landingButton{
+            cursor: pointer;
+            width: 10rem;
+            height: 3rem;
+            font-style: italic;
+            align-self: self-end;
+            margin-top: 1rem;
+            background-color: rgb(228, 123, 42);
+            color: beige;
+            border-style: none;
+            border-radius: 8px;
+            transition: 0.2s ease;
+        }
+        #landingButton:hover{
+            transform: scale(1.05);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+            background-color: rgb(61, 162, 162);
+        }
