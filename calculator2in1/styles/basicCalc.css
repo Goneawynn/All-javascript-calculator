@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'CalculatorFont';
+    src: url('fonts/digital-7.ttf') format('truetype');
+    /* font-weight: normal;
+    font-style: normal;
+    font-display: swap; */
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'CalculatorFont';
+}
+
+body{
+    background-image: linear-gradient(to right, rgb(11, 121, 11), rgb(61, 202, 61));
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+    #container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(79, 77, 77);
+        /* height: 20rem; */
+        padding: 2rem;
+        gap: 1.5rem;
+        border-radius: 1rem;
+        box-shadow: 5px 5px 6px rgb(4, 4, 4);
+    }
+    #display{
+        font-family: 'CalculatorFont', monospace;
+        height: 4rem;
+        font-size: 3rem;
+        line-height: 4rem;
+        text-align: right;
+        border-radius: 1rem;
+        border-style: none;
+        margin-top: 1rem;
+    }
+    #keys{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+    }
+    .btnCalc{
+        font-weight: bold;
+        height: 6rem;
+        border-radius: 70%;
+        border-style: none;
+        font-size: 2rem;
+    }
+    .operator{
+        background-color: orangered;
+    }
+    .result{
+        grid-column: 4;
+    }
+    #landingButton{
+        position: absolute;
+        display: flex;
+        bottom: 3.5rem;
+        left: 2.3rem;
+        padding: 7px;
+        border-radius: 1rem;
+        border-style: none;
+        font-style: italic;
+    }
+
+    .btnCalc:hover{
+        cursor: pointer;
+        background-color: rgb(179, 177, 177);
+    }
+    .btnCalc:active{
+        background-color: coral;
+    }
+
+    #landingButton:hover{
+        cursor: pointer;
+        background-color: rgb(179, 177, 177);
+        box-shadow: 5px 5px 6px rgb(4, 4, 4);
+        transform: scale(1.05);
+    }
+    #landingButton:active{
+        background-color: coral;
+    }
